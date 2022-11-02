@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate and Starter for Next JS 13+, Tailwind CSS 3.2, TypeScript, Redux 
+Created by Raihan Yudo Saputra
 
-## Getting Started
+### Features
 
-First, run the development server:
+Developer experience first:
 
-```bash
-npm run dev
-# or
-yarn dev
+- ⚡ [Next.js](https://nextjs.org) for Static Site Generator
+- 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
+- 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
+- ✅ Strict Mode for TypeScript and React 18
+- 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals, Tailwind CSS and Airbnb configuration)
+- 💖 Code Formatter with [Prettier](https://prettier.io)
+- 🚓 Lint git commit with Commitlint -SOON-
+- 📓 Write standard compliant commit messages with Commitizen -SOON-
+- 🗂 VSCode configuration
+
+Built-in feature from Next.js:
+
+- ☕ Minify HTML & CSS
+- 💨 Live reload
+- ✅ Cache busting
+
+### Philosophy
+
+- Minimal code
+
+### Requirements
+
+- Node.js 14+ and npm
+
+### Getting started
+
+```shell
+.
+├── README.md                       # README file
+├── __mocks__                       # Mocks for testing
+├── .github                         # GitHub folder
+├── .husky                          # Husky configuration
+├── .vscode                         # VSCode configuration
+├── public                          # Public assets folder
+├── src
+│   ├── layouts                     # Layouts components
+│   ├── pages                       # Next JS Pages
+│   ├── pages.test                  # Next JS Pages tests (this avoid test to treated as a Next.js pages)
+│   ├── styles                      # Styles folder
+│   ├── templates                   # Default template
+│   └── utils                       # Utility functions
+├── tailwind.config.js              # Tailwind CSS configuration
+└── tsconfig.json                   # TypeScript configuration
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
