@@ -8,7 +8,7 @@ Developer experience first:
 - ⚡ [Next.js](https://nextjs.org) for Static Site Generator
 - 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
 - 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
-- ✅ Strict Mode for TypeScript and React 18
+- ✅ Integrate with Redux & Redux Toolkit
 - 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals, Tailwind CSS and Airbnb configuration)
 - 💖 Code Formatter with [Prettier](https://prettier.io)
 - 🚓 Lint git commit with Commitlint -SOON-
@@ -33,19 +33,19 @@ Built-in feature from Next.js:
 
 ```shell
 .
+├── .vscode/                        # VSCode configuration
+├── public/                         # Public assets folder
+├── styles/                         # Styles folder
+├── components/                     # Components Folder ([Naming Pattern](https://medium.com/hackernoon/structuring-projects-and-naming-components-in-react-1261b6e18d76))
+├── pages/                          # Next JS Pages
+├── lib                             # Library Folder (for redux, axios, utility, helper, and etc)
+│   ├── models/                         # Typescript Models Type folder
+│   ├── store/                          # Redux folder
+│   │   ├── slices/                         # Redux Toolkit Slicers folders
+│   │   ├── hooks.ts                        # Redux Hooks
+│   │   ├── index.ts                        # Redux Store
+│   │   ├── reducers.ts                     # Redux Reducers (combined)
+│   ├── utils/                          # Utility or Helpers folder
+│   │   ├── axios.ts                        # Axios Instances
 ├── README.md                       # README file
-├── __mocks__                       # Mocks for testing
-├── .github                         # GitHub folder
-├── .husky                          # Husky configuration
-├── .vscode                         # VSCode configuration
-├── public                          # Public assets folder
-├── src
-│   ├── layouts                     # Layouts components
-│   ├── pages                       # Next JS Pages
-│   ├── pages.test                  # Next JS Pages tests (this avoid test to treated as a Next.js pages)
-│   ├── styles                      # Styles folder
-│   ├── templates                   # Default template
-│   └── utils                       # Utility functions
-├── tailwind.config.js              # Tailwind CSS configuration
-└── tsconfig.json                   # TypeScript configuration
 ```
