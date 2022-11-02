@@ -1,11 +1,17 @@
+import classNames from 'classnames';
 import type { FC } from 'react';
 
 interface Props {
   children: React.ReactNode;
+  className?: string;
 }
 
-const PostContainer: FC<Props> = ({ children }) => {
-  return <div className="flex flex-col">{children}</div>;
+const PostContainer: FC<Props> = ({ children, className = '' }) => {
+  return (
+    <div className={classNames('flex flex-col', ...className.split(' '))}>
+      {children}
+    </div>
+  );
 };
 
 export default PostContainer;
