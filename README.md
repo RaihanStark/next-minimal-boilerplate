@@ -32,7 +32,7 @@ Built-in feature from Next.js:
 ### Getting started
 
 #### Component Naming Pattern
-([Folder Based Pattern](https://medium.com/hackernoon/structuring-projects-and-naming-components-in-react-1261b6e18d76))
+- [Folder Based Pattern](https://medium.com/hackernoon/structuring-projects-and-naming-components-in-react-1261b6e18d76)
 
 #### Folder Structure
 
