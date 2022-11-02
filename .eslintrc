@@ -34,6 +34,7 @@
             "endOfLine": "auto"
           }
         ],
+        "no-param-reassign": "off",
         "tailwindcss/no-custom-classname": "off", // Allow custom class names
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         "jsx-a11y/anchor-is-valid": "off", // Next.js uses its own internal link system
@@ -53,6 +54,6 @@
           { "argsIgnorePattern": "^_" }
         ]
       }
-    },
+    }
   ]
 }
