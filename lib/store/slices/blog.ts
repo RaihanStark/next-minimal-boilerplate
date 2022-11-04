@@ -2,7 +2,7 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import type { BlogState } from '../../models/blog';
-import type { Post } from '../../models/post';
+import type { Post, PostCreateForm } from '../../models/post';
 import axios from '../../utils/axios';
 
 const initialState: BlogState = {
@@ -34,8 +34,19 @@ const loadPosts = createAsyncThunk(
   }
 );
 
+const addPost = createAsyncThunk(
+  'blog/addPost',
+  async (payload: PostCreateForm, thunkAPI) => {
+    thunkAPI.dispatch(slice.actions.setLoading(true));
+    axios.post('/posts', payload).then(() => {
+      thunkAPI.dispatch(slice.actions.setLoading(false));
+    });
+  }
+);
+
 export const blogActions = {
   loadPosts,
+  addPost,
 };
 
 export default slice.reducer;
